@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/2d2b5aa704.js" crossorigin="anonymous"></script>
     <title>Valeria Ragonese's Portfolio</title>
   </head>
   <body>
@@ -56,36 +57,24 @@
           <br>
           Now I'm eager to join a company where I can put my skills to the test.
         </p>
-        <button class="btn btn-primary" id="cvBtn">Check my CV</button>
+        <button class="btn btn-primary" id="cvBtn">Download my CV</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- <section class="container-fluid" id="projects">
-  <h2>projects</h2>
-  <div id="projectList">
-    <div class="square" id="project1">
-      <div class="desc">
-        <p class="projectName">quote machine (react)</p>
-      </div>
-      <div class="thumb">
-        <img width="340" height="170" src="http://valeriaragonese.altervista.org/js-projects/thumb-react-quotes.png" alt="quote machine">
-      </div>
-    </div>
-  </div>
-</section> -->
-
 
 <section class="container-fluid" id="projects">
   <h2>projects</h2>
-  <ul>
+  <ul id="projectMenu">
     <li id="all-projects">all</li>
     <li id="id-react">react</li>
+    <li id="id-ui">ui</li>
     <li id="id-bootstrap">bootstrap</li>
   </ul>
+
   <div class="projectGrid">
-    <div class="module" id="projectReact">
+    <div class="module projectReact">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#magikStore">
         Magik Store
       </button>
@@ -99,16 +88,20 @@
         </button>
       </div>
       <div class="modal-body">
-        <ul>
-          <li>Built with React</li>
-          <li>fake data</li>
-          <li>Bla bla bla</li>
-          <li>Bla bla bla</li>
-        </ul>
+        <div class="row">
+          <div class="col-md-6"><img src="assets/etna.jpg" class="img-fluid"/></div>
+          <div class="col-md-6">
+            <ul class="modalTech">
+              <li>Built with React</li>
+              <li>fake data</li>
+              <li>Bla bla bla</li>
+              <li>Bla bla bla</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
@@ -116,7 +109,8 @@
     </div>
 
 
-
+    <div class="module projectReact">Credenza</div>
+    <div class="module projectReact">Recipe Box</div>
     <div class="module projectBootstrap">Hibiscus</div>
     <div class="module projectBootstrap">3 - B</div>
   </div>
@@ -126,7 +120,52 @@
 
 <!--  SKILLS SECTION -->
 <section class="container-fluid" id="skills">
-  <h2>my skills</h2>
+  <h2>technical skills</h2>
+  <div id="skillBox">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Front End</h5>
+            <ul class="card-text">
+              <li>HTML5/CSS3/SASS</li>
+              <li>Javascript/jQuery</li>
+              <li>React/Redux</li>
+              <li>Bootstrap</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Back End</h5>
+            <ul class="card-text">
+              <li>RESTful API</li>
+              <li>Node.js + Express.js</li>
+              <li>Ruby/Rails</li>
+              <li>SQL</li>
+              <li>MongoDB</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Others</h5>
+            <ul class="card-text">
+              <li>Git</li>
+              <li>Photoshop</li>
+              <li>Wireframing</li>
+              <li>NPM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 

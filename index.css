@@ -67,8 +67,7 @@ h2 {
   text-align: left;
   padding: 10vmin 5vmin 10vmin 10vmin;
   box-shadow: 0px 25px 42px rgba(0,0,0,0.2);
-  font-family: var(--Rubik);
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .panel h1 {
@@ -93,10 +92,9 @@ h2 {
   border: 1px solid var(--darkPink);
 }
 #cvBtn:hover {
-/* background-color: var(--darkGray); */
-  background-color: #fff;
-  border: 2px solid var(--veryDarkGray);
-  color: var(--darkGray)
+  background-color: var(--lightPink);
+  border: 1px solid var(--lightPink);
+  color: var(--veryDarkGray);
   transition: all .4s ease;
 }
 
@@ -113,12 +111,12 @@ h2 {
 
 /*  ===== PROJECTS */
 
-#projects ul {
+#projectMenu {
   text-align: center;
   list-style-type: none;
   padding-bottom: 4vmin;
 }
-#projects ul li {
+#projectMenu li {
   display: inline;
   margin-right: 3vmin;
   color: #fff;
@@ -129,7 +127,6 @@ h2 {
 }
 
 .projectGrid {
-  /* Grid Fallback */
   display: flex;
   flex-wrap: wrap;
 
@@ -160,6 +157,13 @@ h2 {
   }
 }
 
+/*  ----------------------- MODAL ------------------*/
+.modalTech li {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--veryDarkGray);
+  list-style-type: square;
+}
 
 
 /*  SKILLS SECTION */
@@ -169,6 +173,49 @@ h2 {
 #skills h2 {
   color: var(--veryDarkGray);
 }
+
+.fab {
+  color: var(--veryDarkGray);
+  font-size: 6vmin;
+}
+.fab:hover {
+  font-size: 8vmin;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  transition: all 0.3s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+#skillBox .card {
+  margin-bottom: 1rem;
+  padding: 1rem 0 0 1rem;
+}
+
+#skillBox .card  ul {
+  margin-bottom: 1rem;
+  list-style-type: none;
+}
+
+#skillBox .card  li:before {
+  content: "~";
+  /* font-family: "Font Awesome 5 Free"; */
+  padding: 0 10px 0 0;
+}
+
+
 
 /*  ------------------------------------------------------- */
 

@@ -42,13 +42,13 @@ $('#all-projects').click(function() {
 });
 
 $('#id-react').click(function() {
-  $('#projectReact').fadeIn().css("display", "flex")
+  $('.projectReact').fadeIn().css("display", "flex")
   $('.projectGrid div').filter(".projectBootstrap").fadeOut().css("display", "none");
 });
 
 $('#id-bootstrap').click(function() {
   $('.projectBootstrap').fadeIn().css("display", "flex")
-  $('.projectGrid div').filter("#projectReact").fadeOut().css("display", "none");
+  $('.projectGrid div').filter(".projectReact").fadeOut().css("display", "none");
 });
 
 
