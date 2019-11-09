@@ -13,21 +13,28 @@
   <!--   NAV -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     <li class="nav-item active">
         <a class="nav-link" href="#aboutSection">about me</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#projects">projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#skills">skills</a>
       </li>
     </ul>
+    <ul class="navbar-nav" id="social-media">
+      <li><i class="fab fa-github-alt"></i></li>
+      <li><i class="fab fa-linkedin-in"></i></li>
+      <li><i class="fab fa-twitter"></i></li>
+      <li><i class="fab fa-instagram"></i></li>
+    </ul>
+
   </div>
 </nav>
 
@@ -37,9 +44,10 @@
 <section class="container-fluid" id="main">
   <h1>I'm Valeria</h1>
   <h2>a Front End Developer</h2>
+  <button class="btn" id="see-my-work">See my work</button>
 </section>
 
-<section class="container text-center" id="aboutSection">
+<!-- <section class="container text-center" id="aboutSection">
   <div class="row">
     <div class="col-md-6 col-sm-12">
       <div id="about">
@@ -47,24 +55,42 @@
       </div>
     </div>
     <div class="col-md-6 col-sm-12">
-      <div class="panel text-left">
+      <div class="panel">
         <h3>about me</h3>
-        <p class="pt-4">
+        <p >
           I'm a full stack developer with a passion for Front End engineering.
           <br><br>
-          After coding HTML & CSS for over 10 years as a hobby, I have recently completed a Full Stack Bootcamp at
+          After coding HTML & CSS for over 10 years as a hobby, I completed a Full Stack Bootcamp at
           <strong>Flatiron School</strong> (London) with a focus on Ruby, Ruby on Rails, Javascript and React.
           <br>
-          Now I'm eager to join a company where I can put my skills to the test.
+          I'm eager to join a company where I can put my skills to the test.
         </p>
         <button class="btn btn-primary" id="cvBtn">Download my CV</button>
       </div>
     </div>
   </div>
+</section> -->
+
+
+<section class="container" id="about">
+  <img src="assets/me.jpg" class="img-fluid" />
+
+      <div class="panel">
+        <h3>about me</h3>
+        <p>
+          I'm a full stack developer with a passion for Front End engineering.
+          <br><br>
+          After coding HTML & CSS for over 10 years as a hobby, I completed a Full Stack Bootcamp at
+          <strong>Flatiron School</strong> (London) with a focus on Ruby, Ruby on Rails, Javascript and React.
+          <br>
+          I'm eager to join a company where I can put my skills to the test.
+        </p>
+        <button class="btn btn-primary" id="cvBtn">Download my CV</button>
+      </div>
 </section>
 
 
-<section class="container-fluid" id="projects">
+<!-- <section class="container-fluid" id="projects">
   <h2>projects</h2>
   <ul id="projectMenu">
     <li id="all-projects">all</li>
@@ -78,6 +104,7 @@
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#magikStore">
         Magik Store
       </button>
+      <img width="340" height="170" src="assets/thumb-magikStore.jpg" class="img-fluid"/>
       <div class="modal fade" id="magikStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
     <div class="modal-content">
@@ -89,7 +116,7 @@
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-6"><img src="assets/etna.jpg" class="img-fluid"/></div>
+          <div class="col-md-6"><img src="assets/magikStore.jpg" class="img-fluid"/></div>
           <div class="col-md-6">
             <ul class="modalTech">
               <li>Built with React</li>
@@ -114,9 +141,198 @@
     <div class="module projectBootstrap">Hibiscus</div>
     <div class="module projectBootstrap">3 - B</div>
   </div>
+</section> -->
 
 
+<!-- <section class="container-fluid" id="projects">
+  <h2>projects</h2>
+  <div id="list">
+    <div class="square">
+
+      <div class="thumb">
+        <i class="fab fa-react"></i>
+        <img width="350" height="220" src="assets/thumb-magikStore.jpg" alt="Magik Store">
+      </div>
+    </div>
+</section> -->
+
+<section class="container-fluid" id="projects">
+  <h2>projects</h2>
+  <ul id="projectMenu">
+    <li id="all-projects">all</li>
+    <li id="id-react">react</li>
+    <li id="id-ui">ui</li>
+    <li id="id-bootstrap">bootstrap</li>
+  </ul>
+
+  <div class="row">
+    <div class="projectGrid col-sm-12 col-md-3">
+      <div class="projectCard projectReact">
+        <a href="#" data-toggle="modal" data-target="#magikStore"><i class="fab fa-react"></i></a>
+      </div>
+      <!-- FIRST MODAL -->
+      <div class="modal fade" id="magikStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Magik Store</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6"><img src="assets/magikStore.jpg" class="img-fluid"/></div>
+          <div class="col-md-6">
+            <ul class="modalTech">
+              <li>Built with React</li>
+              <li>Use of React Context</li>
+              <li>Mobile Responsive</li>
+              <li>Bootstrap</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div id="project-modal-links">
+          <a class="view-project" href="https://wicked-store.netlify.com/" target="_blank">view site</a>
+          <a class="view-code" href="https://github.com/morwen80/magik-store" target="_blank">view code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- END FIRST MODAL  -->
+    </div> <!-- end first project  -->
+
+  <!-- second project -->
+    <div class="col-sm-12 col-md-3">
+      <div class="projectCard projectBootstrap">
+        <a href="#" data-toggle="modal" data-target="#hibiscus"><i class="fab fa-bootstrap"></i></a>
+      </div>
+      <!-- SECOND MODAL -->
+      <div class="modal fade" id="hibiscus" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Hibiscus</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6"><img src="assets/thumb-hibiscus.jpg" class="img-fluid"/></div>
+          <div class="col-md-6">
+            <ul class="modalTech">
+              <li>Built with Bootstrap</li>
+              <li>Mobile Responsive</li>
+              <li>A hint of Javascript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div id="project-modal-links">
+            <a class="view-project" href="http://valeriaragonese.altervista.org/hibiscus/index.html" target="_blank">view site</a>
+            <a class="view-code" href="https://github.com/morwen80/hibiscus" target="_blank">view code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- END SECOND MODAL  -->
+  </div><!-- end second project -->
+
+  <!-- third project -->
+    <div class="col-sm-12 col-md-3">
+      <div class="projectCard projectJs">
+        <a href="#" data-toggle="modal" data-target="#musicPlayer"><i class="fab fa-js-square"></i></a>
+      </div>
+      <!-- THIRD MODAL -->
+      <div class="modal fade" id="musicPlayer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Music Player</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6"><img src="assets/music-player.jpg" class="img-fluid"/></div>
+          <div class="col-md-6">
+            <ul class="modalTech">
+              <li>Vanilla Javascript</li>
+              <li>CSS3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div id="project-modal-links">
+          <a class="view-project" href="http://valeriaragonese.altervista.org/js-projects/music-player/index.html" target="_blank">view site</a>
+          <a class="view-code" href="https://github.com/morwen80/music-player-js" target="_blank">view code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- END THIRD MODAL  -->
+    </div> <!-- end 3rd project -->
+
+    <!-- FORTH PROJECT -->
+      <div class="col-sm-12 col-md-3">
+        <div class="projectCard projectReact">
+          <a href="#" data-toggle="modal" data-target="#kronikles"><i class="fab fa-react"></i></a>
+        </div>
+        <!-- FORTH MODAL -->
+        <div class="modal fade" id="kronikles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Kronikles</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6"><img src="assets/kronikles.jpg" class="img-fluid"/></div>
+            <div class="col-md-6">
+              <ul class="modalTech">
+                <li>Built with React/Redux</li>
+                <li>Server built with Node.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div id="project-modal-links">
+            <a class="view-project" href="http://valeriaragonese.altervista.org/js-projects/music-player/index.html" target="_blank">view site</a>
+            <a class="view-code" href="https://github.com/morwen80/music-player-js" target="_blank">view code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- END FOURTH MODAL  -->
+    </div> <!-- end 4th project -->
+
+
+
+
+    <div class="col-sm-12 col-md-3">
+      <div class="projectCard projectUI">
+        signup login<i class="fas fa-pencil-ruler"></i>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 
 <!--  SKILLS SECTION -->
 <section class="container-fluid" id="skills">
