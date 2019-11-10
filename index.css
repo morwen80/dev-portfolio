@@ -132,8 +132,8 @@ h3 {
   padding: 1vmin 2.5vmin;
   background-color: var(--darkPink);
   border: 1px solid var(--darkPink);
-  display: block;
-
+  cursor: pointer;
+  display: table;
 }
 #cvBtn:hover {
   background-color: var(--lightPink);
