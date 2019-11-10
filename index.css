@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  padding: 12vmin;
+  padding: 12vmin 0;
 }
 
 /*  NAVBAR */
@@ -247,12 +247,7 @@ h3 {
 
 #skillBox .card  ul {
   margin-bottom: 1rem;
-  list-style-type: none;
-}
-
-#skillBox .card  li:before {
-  content: "~";
-  padding: 0 10px 0 0;
+  list-style-type: square;
 }
 
 #skillBox .card-title {
