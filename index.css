@@ -25,7 +25,7 @@ section {
 
 .btn {
   font-size: 1.5rem;
-  padding: 1vmin 2.5vmin;
+  padding: .7rem 1.5rem;
   cursor: pointer;
 }
 
@@ -34,7 +34,8 @@ section {
     background-color: var(--lightPink)!important;
 }
 .navbar-light .navbar-nav .nav-link {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 #social-media {
@@ -79,12 +80,12 @@ section {
   background-color: var(--lightPink);
 }
 h1 {
-  font-size: 8vmin;
+  font-size: 3.5rem;
   font-family: 'Sacramento', cursive;
   color: var(--veryDarkGray);
 }
 h2 {
-  font-size: 6vmin;
+  font-size: 3.6rem;
   font-weight: 700;
 }
 
@@ -129,9 +130,7 @@ h3 {
   padding: 0;
   font-size: 4.3vmin;
 }
-#arrow {
-  display: none;
-}
+
 .panel p {
   font-size: 2.5vmin;
   padding-top: 1.5vmin;
@@ -141,9 +140,7 @@ h3 {
 }
 
 #cvBtn {
-  /* font-size: 2.5vmin; */
   margin-top: 5vmin;
-  /* padding: 1vmin 2.5vmin; */
   background-color: var(--darkPink);
   border: 1px solid var(--darkPink);
   cursor: pointer;
@@ -206,11 +203,14 @@ h3 {
 
 
 /*  ----------------------- MODAL ------------------*/
+.modal-title {
+  font-size: 1.5rem;
+}
 .modalTech {
   padding-left: 3vmin;
+  font-size: 1.2rem;
 }
 .modalTech li {
-  /* font-size: 3vmin; */
   color: var(--veryDarkGray);
   list-style-type: square;
   list-style-position: inside;
@@ -218,10 +218,12 @@ h3 {
 
 .modal-footer {
   justify-content: flex-end;
+  padding: 1.5rem .5rem;
 }
 
 .view-project, .view-code {
-  padding: 1vmin 2vmin;
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   color: var(--veryDarkGray);
   text-decoration: none;
@@ -345,10 +347,6 @@ h3 {
 .panel p {
   font-size: 5vmin;
 }
-/* #arrow {
-  display: inline;
-} */
-
 
 /* SECTION 3 - PROJECTS */
   #projects {

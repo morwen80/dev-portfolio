@@ -38,7 +38,6 @@
   </div>
 </nav>
 
-
   <!--  SECTION 1-->
 
 <section class="container-fluid" id="main">
@@ -47,14 +46,11 @@
   <button class="btn" id="see-my-work">See my work</button>
 </section>
 
-<!-- <section class="container" id="about2">
-  <div class="row">
-    <div class="col-md-12 col-lg-3">
-      <img src="assets/me.jpg" class="img-fluid" />
+<section class="container" id="about">
+  <div class="profile-img">
+    <img src="assets/me.jpg" class="img-fluid" />
   </div>
-
-  <div class="col-md-12 col-lg-9 panel">
-    <div class="panel-block">
+    <div class="panel">
       <h3>about me</h3>
       <p>
         I'm a full stack developer with a passion for Front End engineering.
@@ -63,118 +59,10 @@
         <strong>Flatiron School</strong> (London) with a focus on Ruby, Ruby on Rails, Javascript and React.
         <br>
         I'm eager to join a company where I can put my skills to the test.
+        <a href="http://valeriaragonese.altervista.org/Valeria-Ragonese-Software-Developer-CV.pdf" target="_blank" class="btn btn-primary" id="cvBtn">See my CV</a>
       </p>
-      <button class="btn btn-primary" id="cvBtn">Download my CV</button>
     </div>
-</div>
-</section> -->
-
-
-<section class="container" id="about">
-  <div class="profile-img">
-    <img src="assets/me.jpg" class="img-fluid" />
-    <img src="assets/arrow.gif" class="img-fluid" id="arrow" />
-  </div>
-      <div class="panel">
-          <h3>about me</h3>
-          <p>
-            I'm a full stack developer with a passion for Front End engineering.
-            <br><br>
-            After working on personal projects with HTML & CSS for over 10 years, I completed a Full Stack Bootcamp at
-            <strong>Flatiron School</strong> (London) with a focus on Ruby, Ruby on Rails, Javascript and React.
-            <br>
-            I'm eager to join a company where I can put my skills to the test.
-            <a href="assets/Valeria-Ragonese-Software-Developer-CV.pdf" target="_blank" class="btn btn-primary" id="cvBtn">See my CV</a>
-          </p>
-      </div>
 </section>
-
-<!-- <section class="container" id="about">
-  <div class="profile-img">
-    <img src="assets/me.jpg" class="img-fluid" />
-  </div>
-      <div class="panel">
-        <div class="panel-text-block">
-          <h3>about me</h3>
-          <p>
-            I'm a full stack developer with a passion for Front End engineering.
-            <br><br>
-            After working on personal projects with HTML & CSS for over 10 years, I completed a Full Stack Bootcamp at
-            <strong>Flatiron School</strong> (London) with a focus on Ruby, Ruby on Rails, Javascript and React.
-            <br>
-            I'm eager to join a company where I can put my skills to the test.
-          </p>
-          <button class="btn btn-primary" id="cvBtn">Download my CV</button>
-        </div>
-      </div>
-</section> -->
-
-
-<!-- <section class="container-fluid" id="projects">
-  <h2>projects</h2>
-  <ul id="projectMenu">
-    <li id="all-projects">all</li>
-    <li id="id-react">react</li>
-    <li id="id-ui">ui</li>
-    <li id="id-bootstrap">bootstrap</li>
-  </ul>
-
-  <div class="projectGrid">
-    <div class="module projectReact">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#magikStore">
-        Magik Store
-      </button>
-      <img width="340" height="170" src="assets/thumb-magikStore.jpg" class="img-fluid"/>
-      <div class="modal fade" id="magikStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Magik Store</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-md-6"><img src="assets/magikStore.jpg" class="img-fluid"/></div>
-          <div class="col-md-6">
-            <ul class="modalTech">
-              <li>Built with React</li>
-              <li>fake data</li>
-              <li>Bla bla bla</li>
-              <li>Bla bla bla</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-
-
-    <div class="module projectReact">Credenza</div>
-    <div class="module projectReact">Recipe Box</div>
-    <div class="module projectBootstrap">Hibiscus</div>
-    <div class="module projectBootstrap">3 - B</div>
-  </div>
-</section> -->
-
-
-<!-- <section class="container-fluid" id="projects">
-  <h2>projects</h2>
-  <div id="list">
-    <div class="square">
-
-      <div class="thumb">
-        <i class="fab fa-react"></i>
-        <img width="350" height="220" src="assets/thumb-magikStore.jpg" alt="Magik Store">
-      </div>
-    </div>
-</section> -->
 
 <section class="container-fluid" id="projects">
   <h2>projects</h2>
@@ -187,14 +75,13 @@
   </ul>
 
   <div class="row">
-
-      <!-- FORTH PROJECT -->
-        <div class="col-sm-12 col-md-3 projectReact">
-          <div class="projectCard">
-            <a href="#" data-toggle="modal" data-target="#kronikles"><i class="fab fa-react"></i></a>
-          </div>
-          <!-- FORTH MODAL -->
-          <div class="modal fade" id="kronikles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <!-- FIRST PROJECT -->
+    <div class="col-sm-12 col-md-3 projectReact">
+      <div class="projectCard">
+        <a href="#" data-toggle="modal" data-target="#kronikles"><i class="fab fa-react"></i></a>
+      </div>
+      <!-- FIRST MODAL -->
+      <div class="modal fade" id="kronikles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -223,12 +110,12 @@
         </div>
       </div>
     </div>
-        <!-- END FOURTH MODAL  -->
-      </div> <!-- end 4th project -->
+        <!-- END FIRST MODAL  -->
+      </div> <!-- end 1st project -->
 
 
 
-      <!-- FIRST MODAL -->
+      <!-- SECOND MODAL -->
       <div class="projectGrid col-sm-12 col-md-3  projectReact">
         <div class="projectCard">
           <a href="#" data-toggle="modal" data-target="#magikStore"><i class="fab fa-react"></i></a>
@@ -265,10 +152,10 @@
     </div>
   </div>
 </div>
-    <!-- END FIRST MODAL  -->
-    </div> <!-- end first project  -->
+    <!-- END SECOND MODAL  -->
+  </div> <!-- end 2nd project  -->
 
-  <!-- second project -->
+  <!-- third project -->
     <div class="col-sm-12 col-md-3 projectBootstrap">
       <div class="projectCard ">
         <a href="#" data-toggle="modal" data-target="#hibiscus"><i class="fab fa-bootstrap"></i></a>
@@ -304,15 +191,15 @@
     </div>
   </div>
 </div>
-    <!-- END SECOND MODAL  -->
-  </div><!-- end second project -->
+    <!-- END THIRD MODAL  -->
+  </div><!-- end 3rd project -->
 
-  <!-- third project -->
+  <!-- FOURTH PROJECT -->
     <div class="col-sm-12 col-md-3 projectJs">
       <div class="projectCard ">
         <a href="#" data-toggle="modal" data-target="#musicPlayer"><i class="fab fa-js-square"></i></a>
       </div>
-      <!-- THIRD MODAL -->
+      <!-- FOURTH MODAL -->
       <div class="modal fade" id="musicPlayer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -342,10 +229,8 @@
     </div>
   </div>
 </div>
-    <!-- END THIRD MODAL  -->
-    </div> <!-- end 3rd project -->
-
-
+    <!-- END FOURTH MODAL  -->
+  </div> <!-- end 4th project -->
 
 
     <div class="col-sm-12 col-md-3 projectUI">
