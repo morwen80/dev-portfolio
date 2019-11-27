@@ -1,7 +1,6 @@
 // $(document).ready(function() {
 
 
-
 // link the "See my Work" button to the portfolio section
 $('#see-my-work').click(function() {
   $(window.location.href="#projects")
@@ -14,40 +13,44 @@ $('#see-my-work').click(function() {
   });
 
 
-// PROJECT NATIGATION FILTER
-// $('#all-projects').click(function() {
-//   $('.module').fadeIn().css("display", "flex")
-// });
-//
-// $('#id-react').click(function() {
-//   $('.projectReact').fadeIn().css("display", "flex")
-//   $('.projectGrid div').filter(".projectBootstrap").fadeOut().css("display", "none");
-// });
-//
-// $('#id-bootstrap').click(function() {
-//   $('.projectBootstrap').fadeIn().css("display", "flex")
-//   $('.projectGrid div').filter(".projectReact").fadeOut().css("display", "none");
-// });
-
-
-
-// SECOND TRY
+// PROJECTS MENU FILTER
 $('#all-projects').click(function() {
-  $('.projectCard').fadeIn().css("display", "block")
-
+  $('#projects .col-sm-12').fadeIn().css("display", "block")
 });
 
 $('#id-react').click(function() {
   $('.projectReact').fadeIn().css("display", "block")
-  $('.projectGrid').filter(".projectBootstrap").fadeOut().css("display", "none");
+  $(".projectBootstrap").fadeOut().css("display", "none");
+  $(".projectJs").fadeOut().css("display", "none");
+  $(".projectUI").fadeOut().css("display", "none");
 });
 
 $('#id-bootstrap').click(function() {
   $('.projectBootstrap').fadeIn().css("display", "block")
-  $('.projectGrid').filter(".projectReact").fadeOut().css("display", "none");
+  $(".projectReact").fadeOut().css("display", "none");
+  $(".projectJs").fadeOut().css("display", "none");
+  $(".projectUI").fadeOut().css("display", "none");
 });
 
+$('#id-bootstrap').click(function() {
+  $('.projectBootstrap').fadeIn().css("display", "block")
+  $(".projectReact").fadeOut().css("display", "none");
+  $(".projectJs").fadeOut().css("display", "none");
+  $(".projectUI").fadeOut().css("display", "none");
+});
 
+$('#id-javascript').click(function() {
+  $('.projectJs').fadeIn().css("display", "block")
+  $(".projectReact").fadeOut().css("display", "none");
+  $(".projectBootstrap").fadeOut().css("display", "none");
+  $(".projectUI").fadeOut().css("display", "none");
+});
 
+$('#id-ui').click(function() {
+  $('.projectUI').fadeIn().css("display", "block")
+  $(".projectReact").fadeOut().css("display", "none");
+  $(".projectBootstrap").fadeOut().css("display", "none");
+  $(".projectJs").fadeOut().css("display", "none");
+});
 
 // })

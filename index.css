@@ -177,14 +177,15 @@ h3 {
   padding-bottom: 4vmin;
 }
 #projectMenu li {
+  cursor: pointer;
   display: inline;
   margin-right: 3vmin;
   color: #fff;
   text-align: center;
   padding: 1vmin 3vmin;
-  font-size: 4vmin;
+  font-size: 2rem;
+  line-height: 180%;
   background-color: var(--darkPink);
-  cursor: pointer;
 }
 
 .projectCard {
@@ -338,6 +339,7 @@ h3 {
   padding: 1rem ;
 }
 .panel h3 {
+  padding-top: 1rem;
   font-size: 6vmin;
 }
 .panel p {
